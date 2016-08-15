@@ -63,7 +63,7 @@ public class WorkflowServiceImpl implements IWorkflowService {
 	@Override
 	public void saveNewDeploye() {
 		repositoryService.createDeployment()
-				         .name("请假流程（带网关）")
+				         .name("请假流程2（带网关）")
 			             .addClasspathResource("bpmn/leaveBill.bpmn")//从classpath的资源中加载，一次只能加载一个
 			             .addClasspathResource("bpmn/leaveBill.png")
 				         .deploy();
